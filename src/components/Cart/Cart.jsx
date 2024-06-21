@@ -1,4 +1,4 @@
-// import AllCart from "./AllCart";
+import AllCart from "./AllCart";
 import styles from "./Cart.module.css";
 
 import React, { useState } from "react";
@@ -50,31 +50,3 @@ export default function Cart({ count, setCount, decrement, increment, cart }) {
     </div>
   );
 }
-
-/* 
-diffrence between array of objects and objects of objects
-array of objects: [{}, {}, {}]
-objects of objects: {key: {}, key: {}, key: {}}
-
-Pros of array of objects:
-- Easy to loop through
-- Easy to add new objects
-- Easy to remove objects
-
-Cons of array of objects:
-- Hard to access a specific object
-
-Pros of objects of objects:
-- Easy to access a specific object
-
-Cons of objects of objects:
-- Hard to loop through
-- Hard to add new objects
-- Hard to remove objects
-
-How to loop in Object of object :- 
-const object = { a: 1, b: 2, c: 3 };
-Object.keys(object).map((key) => {
-  console.log(object[key]);
-});
-*/
